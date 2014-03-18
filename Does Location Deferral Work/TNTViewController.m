@@ -32,6 +32,7 @@
         
         // Configure for getting updates in the background
         self.locationManager.pausesLocationUpdatesAutomatically = YES;
+        self.locationManager.activityType = CLActivityTypeOther;
         
         // Get to grabbing locations
         [self.locationManager startUpdatingLocation];
@@ -51,7 +52,7 @@
     // Defer location updates for 5 seconds
     if (!self.deferringUpdates) {
         [self.locationManager allowDeferredLocationUpdatesUntilTraveled:CLLocationDistanceMax
-                                                                timeout:(double)5];
+                                                                timeout:(double)10];
         self.deferringUpdates = YES;
     }
     
@@ -80,6 +81,14 @@
         NSLog(@"Deferring update error: %@", error);
     }
     self.deferringUpdates = NO;
+}
+
+- (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager {
+    NSLog(@"Updates paused");
+}
+
+- (void)locationManagerDidResumeLocationUpdates:(CLLocationManager *)manager {
+    NSLog(@"Updates resumed");
 }
 
 @end
