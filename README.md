@@ -1,15 +1,27 @@
-Do background location updates work?
-====================================
+Do location updates work?
+=========================
 
-This tests whether deferred location updates work on some hardware.  This 
-requires that you can run this on a real actual iOS device which runs iOS 7 or 
-higher.
+This tests whether *deferred* location updates work on some hardware.  You'll need to run this on an actual iOS device, which probably means using xcode and having a provisioning profile ready to go.
 
-I only have an iPhone 4S, running iOS7.1.  On that device, deferred background 
-updates do not work.
+## To test
+1. Clone this repo, and run it a device
+2. Wait ~5 seconds, and see a big 'yes!' or a big 'no!'
 
-##To test:
-
-1. Grab this, run it on an iOS device
-2. Background the app, wait 15 seconds
-3. Foreground the app.  Your logs might be helpful too.
+## Test results (so far)
+<table>
+    <tr>
+        <td><strong>Device</strong></td>
+        <td><strong>iOS</strong></td>
+        <td><strong>works?</strong></td>
+    </tr>
+    <tr>
+        <td>iphone 4s</td>
+        <td>7.1</td>
+        <td>no</td>
+    </tr>
+    <tr>
+        <td>iphone 5</td>
+        <td>7.1</td>
+        <td>yes</td>
+    </tr>
+</table>

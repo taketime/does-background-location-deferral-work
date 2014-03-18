@@ -10,8 +10,8 @@
 
 @interface TNTViewController ()
 @property BOOL deferringUpdates;
-@property BOOL wasBackgrounded;
 @property CLLocationManager *locationManager;
+@property NSMutableArray *locations;
 @property (weak, nonatomic) IBOutlet UILabel *status;
 @end
 
@@ -23,6 +23,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     if ([CLLocationManager locationServicesEnabled]) {
+        self.locations = [[NSMutableArray alloc] init];
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
         
@@ -32,7 +33,7 @@
         
         // Configure for getting updates in the background
         self.locationManager.pausesLocationUpdatesAutomatically = YES;
-        self.locationManager.activityType = CLActivityTypeOther;
+        self.locationManager.activityType = CLActivityTypeFitness;
         
         // Get to grabbing locations
         [self.locationManager startUpdatingLocation];
@@ -49,37 +50,37 @@
 # pragma mark - conform to CLLocationDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    // Store some locations
+    for (CLLocation *loc in locations) {
+        [self.locations addObject:loc];
+    }
+    
     // Defer location updates for 5 seconds
     if (!self.deferringUpdates) {
         [self.locationManager allowDeferredLocationUpdatesUntilTraveled:CLLocationDistanceMax
-                                                                timeout:(double)10];
+                                                                timeout:(double)5];
         self.deferringUpdates = YES;
-    }
-    
-    // Catch if we've been backgrounded
-    if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateBackground) {
-        self.wasBackgrounded = YES;
-    }
-    
-    // If I've ever been backgrounded, and got more one location, background location updates work
-    if (self.wasBackgrounded) {
-        if ([locations count] > 1) {
-            NSLog(@"deferral worked!");
-            NSLog(@"%lu locations: %@", (unsigned long)[locations count], locations);
-            self.status.text = @"YES!";
-            self.status.textColor = [UIColor greenColor];
-        } else {
-            self.status.text = @"NO!";
-            self.status.textColor = [UIColor redColor];
-        }
     }
 }
 
 // Called after deferral is complete
 - (void)locationManager:(CLLocationManager *)manager didFinishDeferredUpdatesWithError:(NSError *)error {
     if (error) {
-        NSLog(@"Deferring update error: %@", error);
+        NSLog(@"Deferring finished with error: %@", error);
     }
+    
+    if ([self.locations count] > 1 && !error) {
+        NSLog(@"locations %@", self.locations);
+        self.status.text = @"YES!";
+        self.status.textColor = [UIColor greenColor];
+    } else {
+        self.status.text = @"NO!";
+        self.status.textColor = [UIColor redColor];
+    }
+    
+    // Reset locations cache
+    [self.locations removeAllObjects];
+    
     self.deferringUpdates = NO;
 }
 
