@@ -21,6 +21,7 @@
 		839E3EFA18D7D65600BF0F38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E3EDC18D7D65500BF0F38 /* UIKit.framework */; };
 		839E3F0218D7D65600BF0F38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 839E3F0018D7D65600BF0F38 /* InfoPlist.strings */; };
 		839E3F0418D7D65600BF0F38 /* Does_Location_Deferral_WorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839E3F0318D7D65600BF0F38 /* Does_Location_Deferral_WorkTests.m */; };
+		839E3F1018D7D75B00BF0F38 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E3F0F18D7D75B00BF0F38 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		839E3EFF18D7D65600BF0F38 /* Does Location Deferral WorkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Does Location Deferral WorkTests-Info.plist"; sourceTree = "<group>"; };
 		839E3F0118D7D65600BF0F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		839E3F0318D7D65600BF0F38 /* Does_Location_Deferral_WorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Does_Location_Deferral_WorkTests.m; sourceTree = "<group>"; };
+		839E3F0F18D7D75B00BF0F38 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839E3F1018D7D75B00BF0F38 /* CoreLocation.framework in Frameworks */,
 				839E3EDB18D7D65500BF0F38 /* CoreGraphics.framework in Frameworks */,
 				839E3EDD18D7D65500BF0F38 /* UIKit.framework in Frameworks */,
 				839E3ED918D7D65500BF0F38 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		839E3ED718D7D65500BF0F38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				839E3F0F18D7D75B00BF0F38 /* CoreLocation.framework */,
 				839E3ED818D7D65500BF0F38 /* Foundation.framework */,
 				839E3EDA18D7D65500BF0F38 /* CoreGraphics.framework */,
 				839E3EDC18D7D65500BF0F38 /* UIKit.framework */,
@@ -200,6 +204,16 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Christopher Jones";
 				TargetAttributes = {
+					839E3ED418D7D65500BF0F38 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
 					839E3EF518D7D65600BF0F38 = {
 						TestTargetID = 839E3ED418D7D65500BF0F38;
 					};

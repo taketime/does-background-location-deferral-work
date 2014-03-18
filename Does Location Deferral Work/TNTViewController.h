@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreLocation/CoreLocation.h"
 
-@interface TNTViewController : UIViewController
+@interface TNTViewController : UIViewController <CLLocationManagerDelegate>
 
 @end
