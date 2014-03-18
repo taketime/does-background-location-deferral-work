@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		839E3ED918D7D65500BF0F38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E3ED818D7D65500BF0F38 /* Foundation.framework */; };
+		839E3EDB18D7D65500BF0F38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E3EDA18D7D65500BF0F38 /* CoreGraphics.framework */; };
+		839E3EDD18D7D65500BF0F38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E3EDC18D7D65500BF0F38 /* UIKit.framework */; };
+		839E3EE318D7D65500BF0F38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 839E3EE118D7D65500BF0F38 /* InfoPlist.strings */; };
+		839E3EE518D7D65500BF0F38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 839E3EE418D7D65500BF0F38 /* main.m */; };
+		839E3EE918D7D65500BF0F38 /* TNTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 839E3EE818D7D65500BF0F38 /* TNTAppDelegate.m */; };
+		839E3EEC18D7D65500BF0F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839E3EEA18D7D65500BF0F38 /* Main.storyboard */; };
+		839E3EEF18D7D65500BF0F38 /* TNTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839E3EEE18D7D65500BF0F38 /* TNTViewController.m */; };
+		839E3EF118D7D65500BF0F38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839E3EF018D7D65500BF0F38 /* Images.xcassets */; };
+		839E3EF818D7D65600BF0F38 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E3EF718D7D65600BF0F38 /* XCTest.framework */; };
+		839E3EF918D7D65600BF0F38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E3ED818D7D65500BF0F38 /* Foundation.framework */; };
+		839E3EFA18D7D65600BF0F38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E3EDC18D7D65500BF0F38 /* UIKit.framework */; };
+		839E3F0218D7D65600BF0F38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 839E3F0018D7D65600BF0F38 /* InfoPlist.strings */; };
+		839E3F0418D7D65600BF0F38 /* Does_Location_Deferral_WorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839E3F0318D7D65600BF0F38 /* Does_Location_Deferral_WorkTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		839E3EFB18D7D65600BF0F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839E3ECD18D7D65500BF0F38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839E3ED418D7D65500BF0F38;
+			remoteInfo = "Does Location Deferral Work";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		839E3ED518D7D65500BF0F38 /* Does Location Deferral Work.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Does Location Deferral Work.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		839E3ED818D7D65500BF0F38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		839E3EDA18D7D65500BF0F38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		839E3EDC18D7D65500BF0F38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		839E3EE018D7D65500BF0F38 /* Does Location Deferral Work-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Does Location Deferral Work-Info.plist"; sourceTree = "<group>"; };
+		839E3EE218D7D65500BF0F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		839E3EE418D7D65500BF0F38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		839E3EE618D7D65500BF0F38 /* Does Location Deferral Work-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Does Location Deferral Work-Prefix.pch"; sourceTree = "<group>"; };
+		839E3EE718D7D65500BF0F38 /* TNTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNTAppDelegate.h; sourceTree = "<group>"; };
+		839E3EE818D7D65500BF0F38 /* TNTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNTAppDelegate.m; sourceTree = "<group>"; };
+		839E3EEB18D7D65500BF0F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		839E3EED18D7D65500BF0F38 /* TNTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNTViewController.h; sourceTree = "<group>"; };
+		839E3EEE18D7D65500BF0F38 /* TNTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNTViewController.m; sourceTree = "<group>"; };
+		839E3EF018D7D65500BF0F38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		839E3EF618D7D65600BF0F38 /* Does Location Deferral WorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Does Location Deferral WorkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		839E3EF718D7D65600BF0F38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		839E3EFF18D7D65600BF0F38 /* Does Location Deferral WorkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Does Location Deferral WorkTests-Info.plist"; sourceTree = "<group>"; };
+		839E3F0118D7D65600BF0F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		839E3F0318D7D65600BF0F38 /* Does_Location_Deferral_WorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Does_Location_Deferral_WorkTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		839E3ED218D7D65500BF0F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839E3EDB18D7D65500BF0F38 /* CoreGraphics.framework in Frameworks */,
+				839E3EDD18D7D65500BF0F38 /* UIKit.framework in Frameworks */,
+				839E3ED918D7D65500BF0F38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839E3EF318D7D65600BF0F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839E3EF818D7D65600BF0F38 /* XCTest.framework in Frameworks */,
+				839E3EFA18D7D65600BF0F38 /* UIKit.framework in Frameworks */,
+				839E3EF918D7D65600BF0F38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		839E3ECC18D7D65500BF0F38 = {
+			isa = PBXGroup;
+			children = (
+				839E3EDE18D7D65500BF0F38 /* Does Location Deferral Work */,
+				839E3EFD18D7D65600BF0F38 /* Does Location Deferral WorkTests */,
+				839E3ED718D7D65500BF0F38 /* Frameworks */,
+				839E3ED618D7D65500BF0F38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		839E3ED618D7D65500BF0F38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				839E3ED518D7D65500BF0F38 /* Does Location Deferral Work.app */,
+				839E3EF618D7D65600BF0F38 /* Does Location Deferral WorkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		839E3ED718D7D65500BF0F38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				839E3ED818D7D65500BF0F38 /* Foundation.framework */,
+				839E3EDA18D7D65500BF0F38 /* CoreGraphics.framework */,
+				839E3EDC18D7D65500BF0F38 /* UIKit.framework */,
+				839E3EF718D7D65600BF0F38 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		839E3EDE18D7D65500BF0F38 /* Does Location Deferral Work */ = {
+			isa = PBXGroup;
+			children = (
+				839E3EE718D7D65500BF0F38 /* TNTAppDelegate.h */,
+				839E3EE818D7D65500BF0F38 /* TNTAppDelegate.m */,
+				839E3EEA18D7D65500BF0F38 /* Main.storyboard */,
+				839E3EED18D7D65500BF0F38 /* TNTViewController.h */,
+				839E3EEE18D7D65500BF0F38 /* TNTViewController.m */,
+				839E3EF018D7D65500BF0F38 /* Images.xcassets */,
+				839E3EDF18D7D65500BF0F38 /* Supporting Files */,
+			);
+			path = "Does Location Deferral Work";
+			sourceTree = "<group>";
+		};
+		839E3EDF18D7D65500BF0F38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				839E3EE018D7D65500BF0F38 /* Does Location Deferral Work-Info.plist */,
+				839E3EE118D7D65500BF0F38 /* InfoPlist.strings */,
+				839E3EE418D7D65500BF0F38 /* main.m */,
+				839E3EE618D7D65500BF0F38 /* Does Location Deferral Work-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		839E3EFD18D7D65600BF0F38 /* Does Location Deferral WorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				839E3F0318D7D65600BF0F38 /* Does_Location_Deferral_WorkTests.m */,
+				839E3EFE18D7D65600BF0F38 /* Supporting Files */,
+			);
+			path = "Does Location Deferral WorkTests";
+			sourceTree = "<group>";
+		};
+		839E3EFE18D7D65600BF0F38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				839E3EFF18D7D65600BF0F38 /* Does Location Deferral WorkTests-Info.plist */,
+				839E3F0018D7D65600BF0F38 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		839E3ED418D7D65500BF0F38 /* Does Location Deferral Work */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839E3F0718D7D65600BF0F38 /* Build configuration list for PBXNativeTarget "Does Location Deferral Work" */;
+			buildPhases = (
+				839E3ED118D7D65500BF0F38 /* Sources */,
+				839E3ED218D7D65500BF0F38 /* Frameworks */,
+				839E3ED318D7D65500BF0F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Does Location Deferral Work";
+			productName = "Does Location Deferral Work";
+			productReference = 839E3ED518D7D65500BF0F38 /* Does Location Deferral Work.app */;
+			productType = "com.apple.product-type.application";
+		};
+		839E3EF518D7D65600BF0F38 /* Does Location Deferral WorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839E3F0A18D7D65600BF0F38 /* Build configuration list for PBXNativeTarget "Does Location Deferral WorkTests" */;
+			buildPhases = (
+				839E3EF218D7D65600BF0F38 /* Sources */,
+				839E3EF318D7D65600BF0F38 /* Frameworks */,
+				839E3EF418D7D65600BF0F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				839E3EFC18D7D65600BF0F38 /* PBXTargetDependency */,
+			);
+			name = "Does Location Deferral WorkTests";
+			productName = "Does Location Deferral WorkTests";
+			productReference = 839E3EF618D7D65600BF0F38 /* Does Location Deferral WorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		839E3ECD18D7D65500BF0F38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TNT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Christopher Jones";
+				TargetAttributes = {
+					839E3EF518D7D65600BF0F38 = {
+						TestTargetID = 839E3ED418D7D65500BF0F38;
+					};
+				};
+			};
+			buildConfigurationList = 839E3ED018D7D65500BF0F38 /* Build configuration list for PBXProject "Does Location Deferral Work" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 839E3ECC18D7D65500BF0F38;
+			productRefGroup = 839E3ED618D7D65500BF0F38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				839E3ED418D7D65500BF0F38 /* Does Location Deferral Work */,
+				839E3EF518D7D65600BF0F38 /* Does Location Deferral WorkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		839E3ED318D7D65500BF0F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839E3EF118D7D65500BF0F38 /* Images.xcassets in Resources */,
+				839E3EE318D7D65500BF0F38 /* InfoPlist.strings in Resources */,
+				839E3EEC18D7D65500BF0F38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839E3EF418D7D65600BF0F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839E3F0218D7D65600BF0F38 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		839E3ED118D7D65500BF0F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839E3EE518D7D65500BF0F38 /* main.m in Sources */,
+				839E3EE918D7D65500BF0F38 /* TNTAppDelegate.m in Sources */,
+				839E3EEF18D7D65500BF0F38 /* TNTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839E3EF218D7D65600BF0F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839E3F0418D7D65600BF0F38 /* Does_Location_Deferral_WorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		839E3EFC18D7D65600BF0F38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839E3ED418D7D65500BF0F38 /* Does Location Deferral Work */;
+			targetProxy = 839E3EFB18D7D65600BF0F38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		839E3EE118D7D65500BF0F38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839E3EE218D7D65500BF0F38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		839E3EEA18D7D65500BF0F38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839E3EEB18D7D65500BF0F38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		839E3F0018D7D65600BF0F38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839E3F0118D7D65600BF0F38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		839E3F0518D7D65600BF0F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		839E3F0618D7D65600BF0F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		839E3F0818D7D65600BF0F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Does Location Deferral Work/Does Location Deferral Work-Prefix.pch";
+				INFOPLIST_FILE = "Does Location Deferral Work/Does Location Deferral Work-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		839E3F0918D7D65600BF0F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Does Location Deferral Work/Does Location Deferral Work-Prefix.pch";
+				INFOPLIST_FILE = "Does Location Deferral Work/Does Location Deferral Work-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		839E3F0B18D7D65600BF0F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Does Location Deferral Work.app/Does Location Deferral Work";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Does Location Deferral Work/Does Location Deferral Work-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Does Location Deferral WorkTests/Does Location Deferral WorkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		839E3F0C18D7D65600BF0F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Does Location Deferral Work.app/Does Location Deferral Work";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Does Location Deferral Work/Does Location Deferral Work-Prefix.pch";
+				INFOPLIST_FILE = "Does Location Deferral WorkTests/Does Location Deferral WorkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		839E3ED018D7D65500BF0F38 /* Build configuration list for PBXProject "Does Location Deferral Work" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839E3F0518D7D65600BF0F38 /* Debug */,
+				839E3F0618D7D65600BF0F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839E3F0718D7D65600BF0F38 /* Build configuration list for PBXNativeTarget "Does Location Deferral Work" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839E3F0818D7D65600BF0F38 /* Debug */,
+				839E3F0918D7D65600BF0F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		839E3F0A18D7D65600BF0F38 /* Build configuration list for PBXNativeTarget "Does Location Deferral WorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839E3F0B18D7D65600BF0F38 /* Debug */,
+				839E3F0C18D7D65600BF0F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 839E3ECD18D7D65500BF0F38 /* Project object */;
+}
