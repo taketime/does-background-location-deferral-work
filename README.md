@@ -13,3 +13,4 @@ This tests whether *deferred* location updates work on some hardware.  You'll ne
 |:---------:|:---:|:------:|
 | iPhone 4S | 7.1 | no     |
 | iPhone 5  | 7.1 | yes    |
+| iPhone 5s | 7.1 | yes    |
