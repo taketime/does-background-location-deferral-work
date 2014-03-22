@@ -8,20 +8,9 @@ This tests whether *deferred* location updates work on some hardware.  You'll ne
 2. Wait ~5 seconds, and see a big 'yes!' or a big 'no!'
 
 ## Test results (so far)
-<table>
-    <tr>
-        <td><strong>Device</strong></td>
-        <td><strong>iOS</strong></td>
-        <td><strong>works?</strong></td>
-    </tr>
-    <tr>
-        <td>iphone 4s</td>
-        <td>7.1</td>
-        <td>no</td>
-    </tr>
-    <tr>
-        <td>iphone 5</td>
-        <td>7.1</td>
-        <td>yes</td>
-    </tr>
-</table>
+
+| Device    | iOS | works? |
+|:---------:|:---:|:------:|
+| iPhone 4S | 7.1 | no     |
+| iPhone 5  | 7.1 | yes    |
+| iPhone 5s | 7.1 | yes    |
